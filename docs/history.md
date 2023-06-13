@@ -1,5 +1,5 @@
 ---
-sidebar_label: History
+sidebar_label: OPM History
 sidebar_position: 1
 ---
 

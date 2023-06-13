@@ -1,5 +1,5 @@
 ---
-title: Rebuild of the Pink-Currents Website in Next.js as Calla-Lily
+title: Rebuild Release Notes
 date: 2023-05-18T07:00:00.000Z
 contributor: Kevin Jang
 ---
