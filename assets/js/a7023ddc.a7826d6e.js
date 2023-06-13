@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkopm_documentation=self.webpackChunkopm_documentation||[]).push([[713],{3457:e=>{e.exports=JSON.parse('[{"label":"Featured","permalink":"/blog/tags/featured","count":1}]')}}]);
