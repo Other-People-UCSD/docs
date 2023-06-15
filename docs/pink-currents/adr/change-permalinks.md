@@ -11,7 +11,7 @@ Permalinks (URLs) are an important component of a website from giving the applic
 
 ## Decision Drivers
 
-### **UX Experience**
+### UX Experience
 Writers and artists should be confident that their work is guaranteed to exist at the permalinks they know/saved.
 * Relevance: Are certain details, such as the file extension and date, really necessary to our audience? 
 

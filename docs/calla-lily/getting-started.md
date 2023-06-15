@@ -6,6 +6,8 @@ contributor: Kevin Jang
 
 ## Prerequisite Knowledge
 
+Developing Calla-Lily assumes you know HTML/CSS/vanilla JS. If you do not have sufficient knowledge. Please refer to the training documents in the private organization folders.
+
 Please understand React, Next.js, and TinaCMS. Ideally go through the React tutorial, then the Next.js tutorial by making a starter blog as well as connecting it with TinaCMS.
 
 ## Installation
