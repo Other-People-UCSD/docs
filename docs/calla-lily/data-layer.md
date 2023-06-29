@@ -39,6 +39,8 @@ TinaCMS queries the raw post data independently of the Next.js data transformati
 
 Data that is referenced through the schema will automatically generate GraphQL queries with fields that point to the frontmatter keys and the content of the file. For many files such as the posts, the query will collect a page of fifty edges instead of all at once. To maintain this page-cache format, we iterate through the GraphQL query results and if there is another page, it gets queried for its results. [This issue was resolved in PR #17](https://github.com/Other-People-UCSD/Calla-Lily/issues/16). 
 
+GraphQL queries can be locally tested through the API at the url `http://localhost:3000/production/index.html#/graphql`. TinaCMS automatically generates queries for the schema connections within the `tina/__generated__/queries.gql` file during development and production stages. Using the generated queries here can be a great debugging tool when trying to access data that comes from the posts. In addition, there is room to use the GraphQL API for more advanced use cases like data science and analysis.
+
 ### Parsing
 
 We attempted to use the TinaMarkdown component to parse the markdown-HTML files, but TinaCMS v1.4 did not properly parse HTML tags. TinaMarkdown resulted in the HTML being seen as plaintext and rendered to the screen. This would have caused issues with almost all posts because images and styles would not be displayed. 
