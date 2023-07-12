@@ -2,11 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Other-People-UCSD.github.io/blog</id>
     <title>Other People Magazine Docs Blog</title>
-    <updated>2023-04-23T00:00:00.000Z</updated>
+    <updated>2023-06-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Other-People-UCSD.github.io/blog"/>
     <subtitle>Other People Magazine Docs Blog</subtitle>
     <icon>https://Other-People-UCSD.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Spring 2023 Newsletter Archive]]></title>
+        <id>https://Other-People-UCSD.github.io/blog/sp23-newsletters</id>
+        <link href="https://Other-People-UCSD.github.io/blog/sp23-newsletters"/>
+        <updated>2023-06-09T00:00:00.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Other People Magazine: No Tortured Artists Here, a Home for any “Othered”]]></title>
         <id>https://Other-People-UCSD.github.io/blog/opm-guardian-feature</id>
