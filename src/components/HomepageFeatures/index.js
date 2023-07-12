@@ -22,11 +22,11 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Historical Blog',
+    title: 'Projects',
     Svg: require('@site/static/img/opm-pen-brush.svg').default,
     description: (
       <>
-        Featuring a blog for all the amazing things Other People Magazine has achieved! 
+        Featuring projects and a blog for all the amazing things Other People Magazine has achieved! 
       </>
     ),
   },

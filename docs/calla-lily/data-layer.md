@@ -1,6 +1,6 @@
 ---
 title: Data Layer
-sidebar_position: 2
+sidebar_position: 5
 contributor: Kevin Jang
 ---
 This page assumes you have read through the [Schema](./schema) document. 

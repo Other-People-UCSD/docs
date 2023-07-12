@@ -3,6 +3,10 @@ title: Typewriter Workflow
 date: 2023-03-31T07:00:00.000Z
 contributor: Kevin Jang
 ---
+:::note
+Written as used in Calla-Lily
+:::
+
 ["missed connections (1 new post)"](https://www.otherpeoplesd.com/2023/missed-connections)
 
 ["missed connections" source code](https://www.otherpeoplesd.com/js/missed-connections.js)

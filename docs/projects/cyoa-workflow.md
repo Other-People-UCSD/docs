@@ -4,6 +4,10 @@ date: 2023-05-31T07:00:00.000Z
 contributor: Kevin Jang
 ---
 
+:::note
+Written as used in Calla-Lily
+:::
+
 [You Have Created An Imaginary Friend](https://www.otherpeoplesd.com/6/you-have-created-an-imaginary-friend)
 
 [cyoa.js (source code)](https://github.com/Other-People-UCSD/Calla-Lily/blob/main/public/js/cyoa.js)

@@ -1,3 +1,6 @@
+---
+sidebar_position: 3
+---
 # Uploading Media to the Website
 
 ## Alt Text Spreadsheet

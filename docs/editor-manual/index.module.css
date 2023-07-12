@@ -1,0 +1,23 @@
+.red {
+    color: red;
+}
+
+.red[aria-selected='true'] {
+    border-bottom-color: red;
+}
+
+.blue {
+    color: royalblue;
+}
+
+.blue[aria-selected='true'] {
+    border-bottom-color: royalblue;
+}
+
+.green {
+    color: green;
+}
+
+.green[aria-selected='true'] {
+    border-bottom-color: green;
+}

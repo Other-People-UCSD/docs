@@ -1,5 +1,6 @@
 ---
 title: Rebuild Release Notes
+sidebar_position: 3
 date: 2023-05-18T07:00:00.000Z
 contributor: Kevin Jang
 ---
