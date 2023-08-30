@@ -55,4 +55,4 @@ print(postKeys)
 
 ## Projects to Explore
 
-- [The Literary Arts Recommendation System](/docs/recommender-system)
+- [The Literary Arts Recommendation System](/docs/recommendation-system)
