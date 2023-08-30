@@ -1,6 +1,6 @@
 ---
 sidebar_label: Data Science Using the Post API
-sidebar_position: 99
+sidebar_position: 80
 ---
 # Data Science Using the Post API
 
@@ -10,13 +10,16 @@ The Other People Team is able to utilize the post API to perform data science re
 
 ## Post API
 
-The API currently has two endpoints to access post data.
-- /api/post-metadata
+The API currently has three endpoints to access post data.
+- /api/post-metadata.json
 - /api/post-data.json
+- /api/pages.json
 
-The metadata endpoint accesses the frontmatter of all the posts. This metadata is specified in the post schema page. This endpoint can be utilized to filter out certain posts by date, tags, etc. such that querying for post data is faster than getting data from all posts using the post-data.json endpoint.
+The `post-metadata.json` endpoint accesses the frontmatter of all the posts. This metadata is specified in the post schema page. This endpoint can be utilized to filter out certain posts by date, tags, etc. such that querying for post data is faster than getting data from all posts using the post-data.json endpoint.
 
-The post-data.json endpoint is a collection of all post data including metadata and the text within the page. This introduces additional keys such as wordCount and `noHTML` which returns the raw text of the page without any HTML tags or indications of styling applied to the text. Markdown styles are also omitted because the data parser converted the text into HTML before the text was stripped again into raw text.
+The `post-data.json` endpoint is a collection of all post data including metadata and the text within the page. This introduces additional keys such as wordCount and `noHTML` which returns the raw text of the page without any HTML tags or indications of styling applied to the text. Markdown styles are also omitted because the data parser converted the text into HTML before the text was stripped again into raw text.
+
+The `pages.json` endpoint is a collection of valid landing pages as specified in the `/lib/posts.js` `getLandingPages` method. This can be used to crawl for the submissions page to see if submissions are open, and if so, collect the links to submit works.
 
 ## Data Science in Python
 
@@ -29,7 +32,7 @@ Connecting to the API endpoints is a simple fetch for the Next.js serverless fun
 ```python
 import requests
 import json
-res = requests.get('https://www.otherpeoplesd.com/api/[endpoint url])
+res = requests.get('https://www.otherpeoplesd.com/api/[endpoint]')
 ```
 
 ### 2. Parse the Data Into JSON
@@ -52,10 +55,4 @@ print(postKeys)
 
 ## Projects to Explore
 
-*There are currently no completed data science projects, only an API set up to extract the data to be analyzed.*
-
-- Post Recommendation Algorithm
-  - Bag of Words model for each post
-  - Identify semantics from small phrases
-  - Filter through a similarity algorithm
-  - Saving output and integrating it into website
+- [The Literary Arts Recommendation System](/docs/recommender-system)
