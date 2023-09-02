@@ -23,5 +23,7 @@ Canonical order to read the entire documentation:
 
 Advanced
 - Projects folder
+- Calla-Lily/Automated Lighthouse Reporting
 - Web Analytics (useful for social media)
 - Data Science (for educational research)
+  - The literary arts recommendation system and models

@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'The Recommendation System'
+sidebar_label: 'The Recommendation System (v1.0)'
 sidebar_position: 81
 ---
 # Recommendation Systems in Media Publishing
