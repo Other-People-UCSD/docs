@@ -2,17 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Other-People-UCSD.github.io/blog</id>
     <title>Other People Magazine Docs Blog</title>
-    <updated>2023-06-09T00:00:00.000Z</updated>
+    <updated>2023-04-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Other-People-UCSD.github.io/blog"/>
     <subtitle>Other People Magazine Docs Blog</subtitle>
     <icon>https://Other-People-UCSD.github.io/img/favicon.ico</icon>
-    <entry>
-        <title type="html"><![CDATA[Spring 2023 Newsletter Archive]]></title>
-        <id>https://Other-People-UCSD.github.io/blog/sp23-newsletters</id>
-        <link href="https://Other-People-UCSD.github.io/blog/sp23-newsletters"/>
-        <updated>2023-06-09T00:00:00.000Z</updated>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Other People Magazine: No Tortured Artists Here, a Home for any “Othered”]]></title>
         <id>https://Other-People-UCSD.github.io/blog/opm-guardian-feature</id>
@@ -23,6 +17,19 @@
         <author>
             <name>Eunice Kim</name>
             <uri>https://ucsdguardian.org/staff_name/eunice-kim/</uri>
+        </author>
+        <category label="Featured" term="Featured"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New Literature Magazine at UCSD fosters Student Expression]]></title>
+        <id>https://Other-People-UCSD.github.io/blog/opm-triton-debut</id>
+        <link href="https://Other-People-UCSD.github.io/blog/opm-triton-debut"/>
+        <updated>2020-10-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This article is extracted from The Triton, University of California, San Diego's independent student newsletter.]]></summary>
+        <content type="html"><![CDATA[<div class="theme-admonition theme-admonition-note alert alert--secondary admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_S0QG"><p>This article is extracted from <a href="https://triton.news/2020/10/new-literature-magazine-at-ucsd-fosters-student-expression/" target="_blank" rel="noopener noreferrer">The Triton</a>, University of California, San Diego's independent student newsletter.</p></div></div><p>Founded in November 2019, <a href="https://www.otherpeoplesd.com/" target="_blank" rel="noopener noreferrer">Other People Magazine</a> is the first student-run literary magazine at UC San Diego, providing a creative outlet for students and alumni. The first issue, released on July 31, included fiction and nonfiction pieces, poems, and paintings among other works. </p><p>While the magazine was started by Literature Writing majors, Other People encourages students of all disciplines to participate. </p><p>Editors-in-Chief Montanna Harling and Nicole Lopez founded Other People after realizing there was a lack of creative platforms for students. “We wanted to develop an inclusive platform that brings together creative students and encourages literary and artistic expression on our predominantly STEM-focused campus,” said Harling. “My fellow co-founders and I began this magazine and club in hopes of crafting a community where students who are passionate about the arts can come together, hone and express their talents, and immerse themselves in an organization of like-minded individuals.”</p><p>The new magazine aims to showcase the artistic talent and creativity among UCSD’s student body. Caitlyn Vilar, who contributed to Other People’s first issue, stated, “It’s a great way to highlight the creative works of students and help them gain exposure especially since UCSD has never really had an outlet like this for writers… We have competitions that writers can enter, but nothing that gives a lot of writers opportunities to be published.”</p><p>Other People Magazine currently accepts prose, poetry, photography, and other forms of visual art from current undergraduates and graduate students as well as UCSD alumni who graduated within the last 3 years. </p><p>With the stress of the classes, students can find relief through artistic expression. “Creative expression is important for college students because it helps us define ourselves, expand our way of thinking, and view the world through a unique lens,” said Harling. “Through creativity, we are able to capture the things in this world that seem intangible–feelings, memories, dreams, experiences–and share those meaningful glimpses of life with others.”</p><p>Below are four highlights for the first issue of “Other People”…</p><blockquote><em>“A hand reaching. The scent of smoke-a fire nearby? There is an underlying sense of urgency, but for what, Sage could not be sure. All she knew was that she had to touch it, and if she did, everything would be okay.”</em></blockquote><p>Ashley Hirao, “<a href="https://www.otherpeoplesd.com/1/2020/04/07/%E7%81%AB" target="_blank" rel="noopener noreferrer">Fire</a>”</p><blockquote><em>“in the shower<br>i scrub vigorously <br>at the places <br>the sun had tainted<br>until they all glow red.<br>i was young,<br>too young to be pretty,<br>but just old enough to know what it was<br>and just old enough to know i wasn’t.”</em></blockquote><p>Caitlyn Vilar, “<a href="https://www.otherpeoplesd.com/1/skin-vilar" target="_blank" rel="noopener noreferrer">skin</a>”</p><blockquote><em>“I had my black hair whipping back in the wind at dusk. Do not trail behind me, I warn the dying stars, because they do not know where this mind has been before settling into this tame body. Sometimes it shows-in a jerk of the finger, a twitch of the ear, or the annoyed twisting and turning of the neck. It’s there, a wild soul that had to be bolted down to flesh.”</em></blockquote><p>Susan Hao, “<a href="https://www.otherpeoplesd.com/1/with-liqour" target="_blank" rel="noopener noreferrer">With Liquor</a>”</p><blockquote><em>“Dear UCSD wifi, you quirky gal,<br>You’re the ultimate femme fatale:<br>Mysterious, fragile, an insurmountable shell-<br>Being cast from your side is unbearable hell.”</em></blockquote><p>Janelle Kim, “<a href="https://www.otherpeoplesd.com/1/a-love-letter-to-the-ucsd-protected-wifi" target="_blank" rel="noopener noreferrer">A Love Letter to the UCSD-PROTECTED Wifi</a>”</p><p>Visit <a href="https://www.otherpeoplesd.com" target="_blank" rel="noopener noreferrer">otherpeoplesd.com</a> for published work and more information on getting involved.</p>]]></content>
+        <author>
+            <name>Amanda Gonzalez</name>
+            <uri>https://triton.news/author/agonzalez/</uri>
         </author>
         <category label="Featured" term="Featured"/>
     </entry>
