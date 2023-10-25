@@ -1,6 +1,6 @@
 ---
 title: Lighthouse Workflow (GH Actions)
-sidebar_position: 10
+sidebar_position: 101
 contributor: Kevin Jang
 ---
 

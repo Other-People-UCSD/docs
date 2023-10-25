@@ -63,4 +63,5 @@ Gen 2 of the digital branch is responsible for publishing all content writing po
 
 ### Gen 3 (2023-Present)
 - Katie Lew / UI Designer (2023-Current)
+- Steven Tran / UI Designer (2023-Current)
 

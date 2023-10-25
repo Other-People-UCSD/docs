@@ -1,6 +1,6 @@
 ---
 title: SEO, Sitemap.xml, Robots.txt
-sidebar_position: 9
+sidebar_position: 100
 contributor: Kevin Jang
 ---
 
