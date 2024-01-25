@@ -12,14 +12,17 @@ Website producers are not expected to perform any computational actions as they 
 
 ### When Is the Action Run?
 
-The workflow is run whenever a file in the `_posts` directory is modified on any branch or whenever there is a pull request that includes modifications to files in the `_posts` directory. This workflow takes around five minutes to run with the majority of the time spent querying the Other People API as well as reading images.
+The workflow is run whenever a pull request to the main branch that includes commits that modify files in the `_posts` directory. This workflow takes around five minutes to run with the majority of the time spent querying the Other People API as well as reading images. 
+
+The workflow is not set to run on pushes because the main branch is protected from automated commits. This prevents editors from making recommendations for an important reason. It is expected that editors will bloat the commit history by saving files multiple times, so we might see over a hundred commits for one collection. Every commit would run the workflow and waste resources because only the final published work generates proper recommendations for the entire publication. To preserve code quality, **it is required that editors publish on a separate branch** and then pull the branch to main once the drafted works are proofread. The commits should be squashed into one with the bloated messages removed.
 
 ```yml
 on:
-  push:
+  pull_request:
+    branches: [ main ]
     paths:
       - '_posts/**'
-  workflow_dispatch:
+  workflow_dispatch: 
 ```
 
 ### What Are the Inputs?

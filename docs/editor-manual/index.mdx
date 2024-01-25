@@ -22,7 +22,11 @@ As Website Producer for Other People Magazine, you are tasked with publishing pr
 
 TinaCMS comes with a straightforward live editing feature that allows you to edit posts side-by-side. This is a feature that the discontinued Forestry.io CMS from pre-v3.3.3 Pink-Currents did not have. If you have used modern CMSes like WordPress or Wix, this may feel very familiar to you. Being able to optionally code works allows us to create experimental stories like "Missed Connections (1 new post)" and "You Have Created an Imaginary Friend" as standalone pieces on our own website and can be transferred reliably to other website frameworks that WordPress may not be able to support easily.
 
-To start, visit the [production page](https://www.otherpeoplesd.com/production). Log in to Tina.io through the OPM credentials. 
+To start, visit the [production page](https://calla-lily-git-publishing-other-people.vercel.app/production/index.html). Log in to Tina.io through the OPM credentials. Get 2FA from your current maintainer after confirming you are **publishing on the publishing version from this link**.
+
+:::info
+None of these edits will show up on the actual website. This is to maintain code quality because each time you save a file, it gets recorded. Therefore, you can keep editing without worrying that you broke the public site. When you are finished proofreading the drafts, contact the current maintainer to complete the publishing process to the public website.
+:::
 
 ![Screenshot of the Homepage](./tina-homepage.jpg)
 
@@ -45,6 +49,10 @@ Some of the sections edit single pages such as Homepage, others may not have a s
 This is where media files are uploaded and accessible from. Please upload compressed images as described in [File Naming and File Size Management](./uploading-media) because we have space limitations on the website and large media files is the main contributor to space. 
 
 The media folders only display 20 images per page, so there is a small Back/Next button at the bottom to view the other images!
+
+:::info
+One caveat to uploading media here is that it will be saved in Tina Cloud. This means people's artwork will be stored on a third-party cloud service in addition to our main dataset. The method to avoid this is to go directly to the source code dataset and upload there.
+:::
 
 ### Cloud
 
@@ -75,6 +83,10 @@ You will usually only have to fill out the fields up to the `Body (content)` as 
 For now, it is okay to only fill out the required fields and to leave the body blank or a complete copy-paste of the work you are going to publish. This will be fixed up in the next section when you can utilize the live preview feature.
 
 Click Save to finish creating the post and proceed to the next step. 
+
+:::tip
+If creating the first post for a new Collection or year, prefix the title with the number (e.g. publishing Collection No. 12, set title as `12/editors-note`). This will create a new folder called `12` with the file `editors-note` inside it. 
+:::
 
 ### Creating a Post: Editing the Content
 
@@ -163,18 +175,31 @@ You may notice that some pages have unique styles such as [Retreat](https://www.
 
 ## Submissions Page and Applications
 
+You should go to the [public website editing page](https://calla-lily-git-main-other-people.vercel.app/production/index.html). Log in to Tina.io through the OPM credentials. Get 2FA from your current maintainer after confirming you are **editing the forms on the public/main version**. These changes will immediately show up on the public website and should only be used for updating minor data like forms.
+
 In the TinaCMS sidebar go to the Forms collection. Modifying the submissions page is different from the other sections here because there is no live preview for edits. Instead you just see a form with a bunch of labeled fields with their purpose. 
 
 For submissions there are three fields to edit. The `Submission Form` fields take in a URL for the form and the third field is a text editor to display text if submissions are closed. Under the hood, the webpage will say if submissions are open if there is something in the Submission Form field, otherwise it will say closed and display the text in the third field. This simplifies the page so you don't have to modify a whole text box when the submission guidelines rarely change and can be rewritten within the submission form itself.
 
-:::warning
-Application forms also take in a URL but they are not connected to any page so this is a problem to fix. 
-:::
-
+Updating application forms is straightforward as there are fields for each team. Updating the links here will update every place where the application link can be found.
+```json
+{
+  "written": "Submissions Form URL",
+  "visual": "Submissions Form URL",
+  "subsClosedText": "Our submissions are now closed for the rest of the school year. We will continue to update this page with open calls for submissions from other orgs at UCSD!\n",
+  "editorial": "Application form URL",
+  "content": "Application form URL",
+  "design": "Application form URL",
+  "events": "Application form URL",
+  "website": "Application form URL"
+}
+```
 [Read this section to understand why the data is saved this way.](./calla-lily/schema#formsjson-data)
 
 ## Team Page
 
+Use the editing page link from the previous section.
+
 In the TinaCMS sidebar go to the Team Members collection. The live preview editor will show a fields categorized as teams with people's name in cards. This should be very self-explanatory where you add a card into the team category by clicking on the plus button and then you can enter in a new member's name and their exact role. You can use the slider on the left side of each card to organize the names. To edit alumni with starting and ending years, you can always ask when someone joined the team!
 
-You may notice that the names aren't in alphabetical. They are actually ordered by role importance > seniority > alphabetical where seniority applies to date joined. For example if a group of people were recruited then you sort them alphabetically by first name. If people were accepted on a rolling basis they are sorted by time joined. 
+You may notice that the names aren't in alphabetical order. They are traditionally ordered by role importance > seniority > alphabetical where seniority applies to date joined. For example if a group of people were recruited then you sort them alphabetically by first name. If people were accepted on a rolling basis they are sorted by time joined. 

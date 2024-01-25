@@ -20,24 +20,20 @@ Next.js does not automatically parse the markdown files by default, so it is nec
 Anything related to data transformation or analysis is done in the `lib` directory.
 
 :::tip
-
 Analyzing the text in this implementation can even be used for word trends and AI purposes! Think recommendating stories based on the content of the current story!
-
 :::
 
 :::warning
-
 While the content is parsed in valid HTML in the contentHTML prop, it is not used to display the content of stories to the pages. Refer to [issue #27](https://github.com/Other-People-UCSD/Calla-Lily/issues/27) resolved through the TinaCMS parsing strategy.
-
 :::
 
 ## Data in TinaCMS
 
-TinaCMS queries the raw post data independently of the Next.js data transformations and analyses. It is possible to do the data parsing and analysis in the TinaCMS pipeline, but we keep it separate because of how Calla-Lily was built due to switching to a different headless CMS. When TinaCMS becomes not compatible with our website direction, not maintained anymore, or discontinued, it will be necessary to mount a new headless CMS to allow editors to publish to the website. 
+TinaCMS queries the raw post data independently of the Next.js data transformations and analyses. It is possible to do the data parsing and analysis in the TinaCMS pipeline, but we keep it separate because of how Calla-Lily was built due to switching to a different headless CMS. When TinaCMS becomes incompatible with our website direction, not maintained anymore, or deprecated, it will be necessary to mount a new headless CMS to allow editors access to the website. 
 
 ### Reading Data: GraphQL
 
-Data that is referenced through the schema will automatically generate GraphQL queries with fields that point to the frontmatter keys and the content of the file. For many files such as the posts, the query will collect a page of fifty edges instead of all at once. To maintain this page-cache format, we iterate through the GraphQL query results and if there is another page, it gets queried for its results. [This issue was resolved in PR #17](https://github.com/Other-People-UCSD/Calla-Lily/issues/16). 
+Data that is referenced through the schema will automatically generate GraphQL queries with fields that point to the frontmatter keys and the content of the file. For many files such as the posts, the query will collect a cursor-indexed page of fifty edges instead of all at once. To maintain this page-cache format, we iterate through the GraphQL query results and if there is another page, it gets queried for its results. [This issue was resolved in PR #17](https://github.com/Other-People-UCSD/Calla-Lily/issues/16). 
 
 GraphQL queries can be locally tested through the API at the url `http://localhost:3000/production/index.html#/graphql`. TinaCMS automatically generates queries for the schema connections within the `tina/__generated__/queries.gql` file during development and production stages. Using the generated queries here can be a great debugging tool when trying to access data that comes from the posts. In addition, there is room to use the GraphQL API for more advanced use cases like data science and analysis.
 

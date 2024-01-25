@@ -16,6 +16,12 @@ Google Analytics was chosen over the built-in Vercel Analytics because it is mor
 
 Google Analytics will not run over development or deployments using the `vercel.app` url to prevent developer bias on the analytics reports. A developer usually spends more time than a user on the pages, so this information should not be tracked or put in a separate reporting group.
 
+:::note
+If you see a spike of users every Sunday/Monday that is our scheduled Lighthouse runner. This value should be the average amount of users plus the number of pages in the website. The location of these "users" come from random cities because that is where the runner's server is located. However, if there is more than one spike every week, someone is running a crawler on the main website. 
+
+To remove this spike, we may need to set a custom HTTP header to disable GA for these runners. Or modify the workflow and API to change the site URL response to the vercel version.
+:::
+
 ## Custom Functions
 
 *There are currently no custom analytics functions*. Web analytics can be extended further by defining custom events using JavaScript functions within the website code. Refer to the Google Analytics documentation for further information on how to do this.

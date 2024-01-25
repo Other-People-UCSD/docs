@@ -36,7 +36,7 @@ Gen 1 of the digital branch is responsible for publishing content writing posts 
 :::
 
 ### Gen 2 (2021-2023)
-- Kevin Jang / Website Developer (2021-2023)
+- Kevin Jang / Website Developer (2021-Current)
   - Calla-Lily v4.0.0-Current
   - Pink-Currents v3.0.0-3.3.3 
   - Documentation Website
@@ -57,11 +57,12 @@ This documentation website was also created by Kevin Jang to ensure that future 
 
 :::info
 
-Gen 2 of the digital branch is responsible for publishing all content writing posts up to June 2023 and Collection No. 2 to No. 5. While Collection No. 6, Liminal, was released June 2, 2023, it will be published in Gen 3 as part of transferring the lead developer role to Katie Lew.
+Gen 2 of the digital branch is responsible for publishing all content writing posts up to June 2023 and Collection No. 2 to No. 6.
 
 :::
 
 ### Gen 3 (2023-Present)
 - Katie Lew / UI Designer (2023-Current)
-- Steven Tran / UI Designer (2023-Current)
+- Steven Tran / UI/UX Designer (2023-Current)
 
+This team is currently redesigning the existing website's UI to improve the brutalist aesthetic while enhancing the UX of navigating the publication. They have built a design system to normalize the UI states of components throughout the product.

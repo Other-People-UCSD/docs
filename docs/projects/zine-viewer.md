@@ -11,11 +11,13 @@ The zine viewer utilizes the `react-pdf` package that uses Mozilla's `pdf.js` va
 
 - Changing page
   - Can be improved to only render once the slider is released
-- Rough, rerendering zooming
+- Rough rerenders for zooming
 - Moveable viewer such that specific parts of a zoomed page can be read clearly 
 - Embeddable on other domains with full functionality as long as allow=fullscreen is enabled
+- Viewing pages as single pages instead of a spread
 
 ## Unsupported Features 
 
-- Viewing pages as single pages instead of a spread
+- Smooth zooming
 - Changing the viewing option to other pdf files
+  - Can be approached by defining different routes for different zines

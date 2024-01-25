@@ -88,6 +88,11 @@ const config = {
             label: 'Pink-Currents',
             position: 'left',
           },
+          {
+            to: '/docs/category/design-system',
+            label: 'Design System',
+            position: 'left',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://www.otherpeoplesd.com',
