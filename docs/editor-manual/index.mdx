@@ -4,11 +4,9 @@ sidebar_position: 4
 contributor: Kevin Jang
 ---
 
-```mdx-code-block
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import styles from './index.module.css';
-```
 
 ## Prerequisite Knowledge
 
@@ -98,16 +96,15 @@ While the content appears to be in line breaks, it does not show the line breaks
 
 Now you have three options to put in a line break in the raw text format.
 
-```mdx-code-block
-<div style={{backgroundColor: 'var(--ifm-color-code-block)', borderRadius: '20px', padding: 8}}>
-<Tabs>
+<div style={{ backgroundColor: 'var(--ifm-color-code-block)', borderRadius: '20px', padding: 8 }}>
+<Tabs className="editor-tabs">
   <TabItem value="br" label="HTML: <br /> &#11088;" attributes={{className: styles.green}} default>
-    <p>Use <code>&lt;br /&gt;</code> at the end of a line</p>
+    <p>Use `<br />` at the end of a line</p>
     <p><strong>Pro:</strong> All users will see the page in HTML, so supporting the post using HTML elements is ideal as the entire page can be exported without changing much information on it. This is very important when managing hundreds of posts as this will keep maintenance low.</p>
-    <p><strong>Con:</strong> It must be typed exactly like this with a space between the <code>r /</code> because this will take care of device compatibility on legacy browsers and pass the linting check. Using only <code>&lt;br&gt;</code> will fail because the website is built in React and all tags must have an enclosing tag or leading slash <code>/</code> to keep the code secure from escaped data.</p>
+    <p><strong>Con:</strong> It must be typed exactly like this with a space between the `r /` because this will take care of device compatibility on legacy browsers and pass the linting check. Using only `<br>` will fail because the website is built in React and all tags must have an enclosing tag or leading slash `/` to keep the code secure from escaped data.</p>
   </TabItem>
   <TabItem value="backslash" label="MD: Backslash" attributes={{className: styles.blue}}>
-    <p>Use a backslash <code>\</code> at the end of a line</p>
+    <p>Use a backslash `\` at the end of a line</p>
     <p><strong>Con:</strong> If changes to the parser are made, the backslash may be recognized as an escape character and break the page in the future.</p>
   </TabItem>
   <TabItem value="doubleSpace" label="MD: Double Space" attributes={{className: styles.red}}>
@@ -116,11 +113,10 @@ Now you have three options to put in a line break in the raw text format.
   </TabItem>
 </Tabs>
 </div>
-```
 
 Poetry can consist of line breaks and stanzas and formatting is used differently for both. The line breaks take care of the case of lines within a stanza, but to separate stanzas you just enter a real line break in between the raw text.
 
-```mdx
+```html
 and don’t believe the glassy-eyed assemblage of faces<br />
 who ramble nonsense like<br /> <em>oh, she was such an angel...</em><br /> 
 <em>oh, she died too young at twenty-one...</em>

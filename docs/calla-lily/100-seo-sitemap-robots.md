@@ -4,7 +4,7 @@ sidebar_position: 100
 contributor: Kevin Jang
 ---
 
-These three concepts were implemented in the [Release Notes](docs/calla-lily/calla-lily-release#seo-v454).
+These three concepts were implemented in the [Release Notes](./calla-lily-release#seo-v454).
 
 ## SEO
 

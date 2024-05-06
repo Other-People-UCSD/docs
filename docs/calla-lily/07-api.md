@@ -4,7 +4,7 @@ sidebar_position: 7
 contributor: Kevin Jang
 ---
 
-The purpose of creating an API for this website is to create insights over the literature and art* published at Other People. Most API calls are used in the [data science section](docs/data-science).
+The purpose of creating an API for this website is to create insights over the literature and art* published at Other People. Most API calls are used in the [data science section](../data-science).
 
 :::note
 *There are no endpoints for artwork to prevent crawling the api endpoints to get the image and circumvent copying. However, there haven't been any outside attempts by adversarial crawlers to access the API endpoints in the server log. The better option in the future would be to use a Content Delivery Network (CDN) for this purpose and to display the image anywhere.
