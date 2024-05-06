@@ -122,9 +122,11 @@ Now that the features have been extracted, we must define a similarity function.
 The two most common similarity functions for recommendation systems are **Euclidean distance** and **cosine similarity**. Euclidean distance measures the distance between two points while cosine similarity measures the angle between the two points. Euclidean distance is affected by magnitude, so it isn't a great option when taking a frequency count for the extracted features. The angle would be better because it won't be affected too much by magnitude changes.
 
 $$\text{Euclidean Distance}$$
+
 $$\quad d(p,q) = \sqrt{\sum^n_{i=1}(p_i-q_i)^2}$$
 
 $$\text{Cosine Similarity}$$
+
 $$cos(\theta) = \frac{A \cdot B}{||A|| \cdot ||B||} = \frac{\sum^n_{i=1}A_i \cdot B_i}{\sqrt{\sum^n_{i=1}A_i^2 \cdot \sum^n_{i=1}B_i^2}}$$
 
 
@@ -263,6 +265,7 @@ This model makes recommendations based on the content of works through the `noHT
 *Term frequency* (TF) is used to measure the frequency that a term has occurred in the data. *Inverse document frequency* (IDF) measures how important a term is in the data by checking its rarity across all works. These two factors are compared in cosine similarity to recommend works that have similar important keywords or topics to match what a reader may like to consume next.
 
 $$tf(t,d) = \frac{\text{frequency}}{\text{frequency of most common word}}$$
+
 $$idf(t,D) = -log P(t|D) = log \frac{N}{|\{d \in D: t \in d\}|}$$
 
 $$tfidf(t,d,D) = tf(t,d) \times idf(t,D)$$
