@@ -39,7 +39,7 @@ on:
 
 ### How to Run Lighthouse in Batches?
 
-This step uses the official Github Action for letting the runner perform JavaScript instead of bash. The array of public URLs are fetched through the API endpoint as specified in the [ documentation](docs/calla-lily/api). Then the array is converted into a string where each URL is separated by newlines. This is saved as an output variable accessible as `${{ steps.urls.outputs.urls }}`. 
+This step uses the official Github Action for letting the runner perform JavaScript instead of bash. The array of public URLs are fetched through the API endpoint as specified in the [documentation](./api). Then the array is converted into a string where each URL is separated by newlines. This is saved as an output variable accessible as `${{ steps.urls.outputs.urls }}`. 
 
 ```yml
 - name: Audit URLs using Lighthouse
