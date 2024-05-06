@@ -11,6 +11,7 @@ Posts store metadata about their information through frontmatter written at the 
 * Layout (default Post)\*\*
   * The layout template to use. 
   * Not modifiable by editors.
+  * Works created in Collection 6 or later and after 2023 may not have this field. It is completely optional due to how the layout is handled in `[...slug].js`.
 * Title\*
   * The title of the story to be displayed in the `<h1>` tag.
 * Date\*
@@ -31,9 +32,9 @@ Posts store metadata about their information through frontmatter written at the 
 as well as special frontmatter options that are defined further in special functions
 
 * Theme
-  * To display the default post theme in light mode or dark mode.
+  * If a work is meant to be viewed in light mode or dark mode, force the theme to it.
 * Content Warning
-  * Warns the reader with an overlay of sensitive triggers. 
+  * Warns the reader with an overlay mentioning the sensitive triggers. 
 
 ### Usage in Next.js
 
@@ -53,12 +54,12 @@ The homepage schema data is stored in a JSON file instead of a markdown file of 
 
 :::note
 
-It might be noticed that Pink-Currents used to use YAML syntax in frontmatter for the homepage or team page for this data. The choice to use JSON was used because Next.js could not read the data from a separate YAML file and put into a JS file through the default webpack configuration. To prevent unncessary complexity, we changed the syntax of the data to JSON because it did not require any changes to the configuration to access.
+Pink-Currents used to use YAML syntax in frontmatter for the homepage or team page for this data. The choice to use JSON was used because Next.js could not read the data from a separate YAML file and put into a JS file through the default webpack configuration. To prevent unncessary complexity, we changed the syntax of the data to JSON because it did not require any changes to the configuration to access.
 
 :::
 ## `forms.json` Data
 
-The fields in the `forms.json` file include areas for submission form URLs and team application URLs. These items are used separately in the submission and team pages, so why are they in a single file? To reduce how many files the developer has to click through, we combined similar field data into a centralized file. This allows us to essentially "template" using the data in this central file instead of having several fields with the same data that must all be changed individually. By making those fields point to the data in this centralized file, the edits will be seen in those areas all at once. This makes maintaining the data simpler as verifying that the component works in one part should result in the component working in the other parts of the website. 
+The fields in the `forms.json` file include areas for submission form URLs, team application URLs, and the footer navigation. These items are used separately in the submission and team pages, so why are they in a single file? To reduce how many files the developer has to click through, we combined similar field data into a centralized file. This allows us to essentially "template" using the data in this central file instead of having several fields with the same data that must all be changed individually. By making those fields point to the data in this centralized file, the edits will be seen in those areas all at once. This makes maintaining the data simpler as verifying that the component works in one part should result in the component working in the other parts of the website. 
 
 :::warning
 

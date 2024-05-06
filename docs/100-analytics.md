@@ -24,4 +24,4 @@ To remove this spike, we may need to set a custom HTTP header to disable GA for 
 
 ## Custom Functions
 
-*There are currently no custom analytics functions*. Web analytics can be extended further by defining custom events using JavaScript functions within the website code. Refer to the Google Analytics documentation for further information on how to do this.
+Clicks to recommendation works are tracked. This is done in the `[...slug].js` file where the onclick handler is passed down to the `PostCard`.

@@ -9,7 +9,6 @@ contributor: Kevin Jang
 
 The organization uses GitHub as a codebase for version control, data storage, and collaboration with other developers on the team for the budget available. The website is built in React because this allows it to be able to interact with many modern headless CMSes like TinaCMS for live editing functionality which a vanilla JS website would not be able to do. Next.js is the web framework that generates the website and its parent company Vercel is used for deployment because of first-class support for Next.js websites. 
 
-
 ## Headless CMS: TinaCMS
 
 ![System Diagram of the TinaCMS Headless CMS](./headless-cms-architecture.png)
@@ -26,15 +25,11 @@ On the editor side, web producers must access the production site and log in thr
 
 Next.js is a framework used to build web applications. Built upon React, this allows Next.js to use HTML templates in the form of JSX to create HTML pages for the client. The templated files are composed of smaller components usually kept within the `components` directory and also the main content components within the `pages` and `_posts` directories. 
 
-:::note
-The search script requires the metadata of posts in order to work. To keep the pages within SSG for fast loading as compared to SSR, each page that uses the search must get the post metadata. However, the data is not fetched as a state variable in the search file but at the top-level `_app.js` file. To pass down the data without making a long dependency chain through files, a React context is used to directly access the data within `search.js`.
-:::
-
 The bottom-left block is the pipeline for how content from Markdown-HTML (MDX) files gets parsed into HTML for the static site generator (SSG). The data is not in fact accessed through Next.js as it has to be run through the TinaCMS connection for the live preview editor feature to work. We used a custom-built parser based off the `<TinaMarkdown />` component that TinaCMS uses in order to satisfy our use case. 
 
-The dynamic router is meant to create static paths for each posts without manually creating JS files for each one unlike the landing pages. Please read the Next.js documentation on dynamic routing and view the source code in `[...slug].js` to see how the router is made. The templated HTML with parsed HTML and dynamic routes are all sent into the Next.js CL/CI pipeline for static site generation where images and third-party scripts will be optimized using Next.js's functions. 
+The dynamic router is meant to create static paths for each posts without manually creating JS files for each one unlike the landing pages. Please read the Next.js documentation on dynamic routing and view the source code in `[...slug].js` to see how the router is constructed. The templated HTML with parsed HTML and dynamic routes are all sent into the Next.js CL/CI pipeline for static site generation where images and third-party scripts will be optimized using Next.js's functions. 
 
-In addition to SSG, server-side rendering (SSR) occurs to create API endpoints for both future data connections and also research. This API will function properly because the website is deployed on Vercel which has first-class support for SSR by converting the pages into serverless functions.
+In addition to SSG, server-side rendering (SSR) occurs to create API endpoints for both future data connections and also research. This API will function properly because the website is deployed on Vercel which has first-class support for SSR by converting the pages into serverless functions. Use cases for SSR include running audits and generating recommendations.
 
 ## GitHub Repository Map
 
@@ -73,5 +68,6 @@ This is an overview of important files and folders in the repository. Many of th
 ├── stories             # Storybook for Design System and unit-tested components
 ├── e2e                 # End-to-end testing (Playwright)
 |
+├── styledict.config.json # Configures design tokens that are actively used in website
 └── next.config.js      # Configuration for Next.JS framework
 ```

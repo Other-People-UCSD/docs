@@ -71,7 +71,7 @@ The view should be sorted by `date` by default. This is useful to see the posts 
 Now you are ready to create a post, fill out the content, and publish it!
 
 :::warning
-You should not publish posts at the top-level (not inside a numbered or year folder) because this will make organization in the future difficult as the magazine grows in size. Currently TinaCMS does not have a "Create New Folder" option so you do have to ask a developer to make the folder for you.
+You should not publish posts at the top-level (not inside a numbered or year folder) because this will make organization in the future difficult as the magazine grows in size. If creating the first post for a new Collection or year, prefix the title with the number (e.g. publishing Collection No. 12, set title as `12/editors-note`). This will create a new folder called `12` with the file `editors-note` inside it. 
 :::
 
 ### Creating a Post: Metadata
@@ -83,10 +83,6 @@ You will usually only have to fill out the fields up to the `Body (content)` as 
 For now, it is okay to only fill out the required fields and to leave the body blank or a complete copy-paste of the work you are going to publish. This will be fixed up in the next section when you can utilize the live preview feature.
 
 Click Save to finish creating the post and proceed to the next step. 
-
-:::tip
-If creating the first post for a new Collection or year, prefix the title with the number (e.g. publishing Collection No. 12, set title as `12/editors-note`). This will create a new folder called `12` with the file `editors-note` inside it. 
-:::
 
 ### Creating a Post: Editing the Content
 
@@ -184,14 +180,15 @@ For submissions there are three fields to edit. The `Submission Form` fields tak
 Updating application forms is straightforward as there are fields for each team. Updating the links here will update every place where the application link can be found.
 ```json
 {
-  "written": "Submissions Form URL",
-  "visual": "Submissions Form URL",
+  "submissions_written": "Submissions Form URL",
+  "submissions_visual": "Submissions Form URL",
   "subsClosedText": "Our submissions are now closed for the rest of the school year. We will continue to update this page with open calls for submissions from other orgs at UCSD!\n",
-  "editorial": "Application form URL",
-  "content": "Application form URL",
-  "design": "Application form URL",
-  "events": "Application form URL",
-  "website": "Application form URL"
+  "app_editorial": "Application form URL",
+  "app_content": "Application form URL",
+  "app_design": "Application form URL",
+  "app_website": "Application form URL",
+  "app_social_media": "Application form URL",
+  "app_event_planning": "Application form URL",
 }
 ```
 [Read this section to understand why the data is saved this way.](./calla-lily/schema#formsjson-data)

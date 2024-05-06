@@ -4,7 +4,7 @@ sidebar_position: 101
 contributor: Kevin Jang
 ---
 
-We use Google Lighthouse to test performance, accessibility, and SEO metrics on the Other People website. It is tedious to manually run lighthouse reports thrugh DevOps, so instead we have created a [Google Lighthouse workflow](https://github.com/Other-People-UCSD/Calla-Lily/blob/main/.github/workflows/lighthouse.yml) that automatically runs lighthouse reports over all public pages and returns the results as GitHub Action artifacts.
+We use Google Lighthouse to test performance, accessibility, and SEO metrics on the Other People website. It is tedious to manually run lighthouse reports thrugh DevOps, so instead we have created a [Google Lighthouse workflow](https://github.com/Other-People-UCSD/Calla-Lily/blob/main/.github/workflows/lighthouse.yml) that automatically runs lighthouse reports over all public pages and returns the results as GitHub Action artifacts. Sometimes the audit reports will output a low performance score through this audit due to the action runner's default hardware configuration. 
 
 ### When Is the Action Run?
 

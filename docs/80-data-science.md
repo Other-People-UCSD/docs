@@ -10,10 +10,11 @@ The Other People Team is able to utilize the post API to perform data science re
 
 ## Post API
 
-The API currently has three endpoints to access post data.
+The API currently has four endpoints to access post data.
 - /api/post-metadata.json
 - /api/post-data.json
 - /api/pages.json
+- /spi/site-urls.json
 
 The `post-metadata.json` endpoint accesses the frontmatter of all the posts. This metadata is specified in the post schema page. This endpoint can be utilized to filter out certain posts by date, tags, etc. such that querying for post data is faster than getting data from all posts using the post-data.json endpoint.
 
@@ -21,6 +22,8 @@ The `post-data.json` endpoint is a collection of all post data including metadat
 
 The `pages.json` endpoint is a collection of valid landing pages as specified in the `/lib/posts.js` `getLandingPages` method. This can be used to crawl for the submissions page to see if submissions are open, and if so, collect the links to submit works.
 
+The `site-urls.json` endpoint is used for crawling over the website. This is used for the Lighthouse audits.
+  
 ## Data Science in Python
 
 Python is commonly taught at UCSD for performing data science or recommendation systems, so this documentation will use Python syntax.

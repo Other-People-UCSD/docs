@@ -14,6 +14,8 @@ Current test coverage is complete over the native API as well as simple navigati
 
 It is important to not write lots of tests because tests can be redundantly covered by other tests. For snapshots that test the parser's ability to render published work properly, the basic operations of displaying hybrid HTML-Markdown are covered by the tests run over customized works and niche styling works. Skipping basic tests like this preserves space usage on the repository and makes viewing snapshots a cleaner as there aren't hundreds of screenshots to look at.
 
+Testing also covers the functionality of new features such as the search component to ensure that the various edge cases work as expected.
+
 ### Snapshot Testing (Removed)
 
 Snapshot tests were removed because of the inconsistencies they had when using the workflow runner as many tests kept timing out for stale network requests. It is better to use unit tests to ensure core functions work as expected. 
